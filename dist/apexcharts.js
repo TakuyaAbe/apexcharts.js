@@ -14899,7 +14899,7 @@
       _this.w = ctx.w;
       _this.dragged = false;
       _this.graphics = new Graphics(_this.ctx);
-      _this.eventList = ['mousedown', 'mouseleave', 'mousemove', 'touchstart', 'touchmove', 'mouseup', 'touchend'];
+      _this.eventList = ['mousedown', 'mousemove', 'touchstart', 'touchmove', 'mouseup', 'touchend'];
       _this.clientX = 0;
       _this.clientY = 0;
       _this.startX = 0;
@@ -15032,7 +15032,7 @@
           }
         }
 
-        if (e.type === 'mouseup' || e.type === 'touchend' || e.type === 'mouseleave') {
+        if (e.type === 'mouseup' || e.type === 'touchend') {
           // we will be calling getBoundingClientRect on each mousedown/mousemove/mouseup
           var _gridRectDim = me.gridRect.getBoundingClientRect();
 

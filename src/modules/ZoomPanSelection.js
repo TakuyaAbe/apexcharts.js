@@ -21,7 +21,6 @@ export default class ZoomPanSelection extends Toolbar {
 
     this.eventList = [
       'mousedown',
-      'mouseleave',
       'mousemove',
       'touchstart',
       'touchmove',
@@ -194,8 +193,7 @@ export default class ZoomPanSelection extends Toolbar {
 
     if (
       e.type === 'mouseup' ||
-      e.type === 'touchend' ||
-      e.type === 'mouseleave'
+      e.type === 'touchend'
     ) {
       // we will be calling getBoundingClientRect on each mousedown/mousemove/mouseup
       let gridRectDim = me.gridRect.getBoundingClientRect()
